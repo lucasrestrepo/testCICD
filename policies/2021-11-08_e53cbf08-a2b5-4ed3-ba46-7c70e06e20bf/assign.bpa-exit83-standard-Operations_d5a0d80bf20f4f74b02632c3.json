@@ -1,0 +1,34 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "bpa-exit83-standard-Operations",
+  "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/mg-operations/providers/Microsoft.Authorization/policyDefinitions/e53cbf08-a2b5-4ed3-ba46-7c70e06e20bf",
+  "scope": "/subscriptions/9571e831-12aa-4e60-b8e0-c0dfc413fbc9",
+  "notScopes": [],
+  "parameters": {
+   "allowedLocations": {
+    "value": [
+     "westus2"
+    ]
+   }
+  },
+  "description": "Draft policy asigment to the management group ",
+  "metadata": {
+   "assignedBy": "Lucas Restrepo",
+   "parameterScopes": {
+    "allowedLocations": "/subscriptions/9571e831-12aa-4e60-b8e0-c0dfc413fbc9"
+   },
+   "createdBy": "b6e5ac48-91c7-4692-8fb3-931adddbe73e",
+   "createdOn": "2021-11-08T14:46:46.395923Z",
+   "updatedBy": "b6e5ac48-91c7-4692-8fb3-931adddbe73e",
+   "updatedOn": "2021-11-08T14:48:37.8947118Z"
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/9571e831-12aa-4e60-b8e0-c0dfc413fbc9/providers/Microsoft.Authorization/policyAssignments/d5a0d80bf20f4f74b02632c3",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "d5a0d80bf20f4f74b02632c3"
+}

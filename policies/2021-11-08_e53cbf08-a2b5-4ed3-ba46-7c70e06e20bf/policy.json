@@ -1,0 +1,39 @@
+{
+ "properties": {
+  "displayName": "2021-11-08",
+  "policyType": "Custom",
+  "mode": "All",
+  "description": "This policy does not do anthing its just to have some definition for the blueprint",
+  "metadata": {
+   "category": "Tags",
+   "createdBy": "b6e5ac48-91c7-4692-8fb3-931adddbe73e",
+   "createdOn": "2021-11-08T14:42:14.9729739Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "allowedLocations": {
+    "type": "Array",
+    "metadata": {
+     "displayName": "Allowed locations",
+     "description": "The list of allowed locations for resources.",
+     "strongType": "location"
+    }
+   }
+  },
+  "policyRule": {
+   "if": {
+    "not": {
+     "field": "location",
+     "in": "[parameters('allowedLocations')]"
+    }
+   },
+   "then": {
+    "effect": "audit"
+   }
+  }
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/mg-operations/providers/Microsoft.Authorization/policyDefinitions/e53cbf08-a2b5-4ed3-ba46-7c70e06e20bf",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "e53cbf08-a2b5-4ed3-ba46-7c70e06e20bf"
+}
